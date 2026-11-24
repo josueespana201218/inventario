@@ -1,0 +1,19 @@
+{
+  "name": "inventario",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema web de inventario: productos, entradas, salidas, ventas, kardex y reportes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server.js",
+    "seed": "node --disable-warning=ExperimentalWarning seed.js",
+    "empaquetar": "node --disable-warning=ExperimentalWarning empaquetar.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
