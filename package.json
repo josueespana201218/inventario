@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Sistema web de inventario: productos, entradas, salidas, ventas, kardex y reportes",
+  "author": "AilanyTech",
   "main": "server.js",
   "scripts": {
     "start": "node --disable-warning=ExperimentalWarning server.js",

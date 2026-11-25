@@ -1,5 +1,7 @@
 # Sistema de Inventario
 
+Desarrollado por **AilanyTech**.
+
 App web para controlar inventario, compras, salidas y ventas. Funciona en el navegador; los datos se guardan en un archivo SQLite local (`data/inventario.db`).
 
 ## Requisitos

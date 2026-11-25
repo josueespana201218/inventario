@@ -446,6 +446,7 @@ const PORT = Number(process.env.PORT) || 3000;
 const HOST = process.env.HOST || '127.0.0.1';
 const servidor = app.listen(PORT, HOST, err => {
   if (err) return; // Express 5 también llama aquí en caso de error; lo maneja servidor.on('error')
+  console.log('Sistema de Inventario - Desarrollado por AilanyTech');
   console.log(`Inventario listo en http://${HOST === '0.0.0.0' ? 'localhost' : HOST}:${PORT}`);
 });
 servidor.on('error', e => {

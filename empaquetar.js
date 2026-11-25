@@ -45,7 +45,7 @@ if (conDatos) {
 const crlf = s => s.trim().replace(/\r?\n/g, '\r\n') + '\r\n';
 fs.writeFileSync(path.join(destino, 'Iniciar Inventario.bat'), crlf(`
 @echo off
-title Inventario - no cierres esta ventana mientras usas el sistema
+title Inventario (AilanyTech) - no cierres esta ventana mientras usas el sistema
 cd /d "%~dp0"
 if "%PORT%"=="" set PORT=3000
 echo.
@@ -68,6 +68,7 @@ pause
 fs.writeFileSync(path.join(destino, 'LEEME.txt'), crlf(`
 INVENTARIO v${pkg.version} - Instalación
 =======================================
+Desarrollado por AilanyTech
 
 Requisitos: Windows 10 u 11 de 64 bits. No hace falta instalar nada más.
 

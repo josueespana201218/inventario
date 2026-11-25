@@ -136,7 +136,7 @@ CREATE INDEX IF NOT EXISTS ix_si_salida ON salida_items(salida_id);
 `);
 
 const defaults = {
-  negocio_nombre: 'Mi Negocio',
+  negocio_nombre: 'AilanyTech',
   negocio_documento: '',
   negocio_direccion: '',
   negocio_telefono: '',
@@ -146,6 +146,8 @@ const defaults = {
 };
 const insCfg = db.prepare('INSERT OR IGNORE INTO config (clave, valor) VALUES (?, ?)');
 for (const [k, v] of Object.entries(defaults)) insCfg.run(k, v);
+// Bases creadas con el nombre genérico anterior pasan a AilanyTech (no toca nombres puestos por el usuario)
+db.prepare("UPDATE config SET valor = 'AilanyTech' WHERE clave = 'negocio_nombre' AND valor = 'Mi Negocio'").run();
 
 // Ejecuta fn dentro de una transacción
 function tx(fn) {
